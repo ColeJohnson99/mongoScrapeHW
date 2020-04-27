@@ -1,5 +1,5 @@
 var express = require("express");
-var logger = require("morgan");
+// Dont know?var logger = require("morgan");
 var mongoose = require("mongoose");
 
 // Our scraping tools
@@ -15,3 +15,4 @@ var PORT = 3000;
 
 // Initialize Express
 var app = express();
+
