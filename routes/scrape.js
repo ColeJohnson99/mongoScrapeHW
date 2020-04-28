@@ -1,4 +1,4 @@
-
+// The scraping is working, the articles are being logged into the DB, but I cant get them to display in the browser
 const express = require('express'),
       cheerio = require('cheerio'),
       rp = require('request-promise'),
@@ -23,6 +23,7 @@ router.get("/newArticles", function(req, res) {
         .then(function ($) {
           let newArticleArr = [];
 
+          //Im assuming my problem lies here or in the routing between files. These are the correct elelments as far as I can tell
           $('#stream-panel li').each((i, element) => {
             let newArticle = new db.Article({
               storyUrl: `https://www.nytimes.com${$(element).find('a').attr('href')}`,

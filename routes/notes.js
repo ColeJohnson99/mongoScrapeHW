@@ -1,4 +1,4 @@
-
+// Cant really show that notes are working if you cant see the articles in the first place... blah
 const express = require('express'),
       router = express.Router(),
       db = require("../models");
