@@ -7,7 +7,6 @@
 }
 
 body {
-  background-image: url('../img/brick-background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 200%;
@@ -28,7 +27,6 @@ button:focus {
 
  /* Header==================================================================================== */
  .header {
-    background-image: url('../../img/nyt-header.png');
     background-color: #181818;
     background-size: 40% 40%;
     background-repeat: no-repeat;
@@ -41,8 +39,8 @@ button:focus {
   }
   
   
-  #neon {
-    color: white;
+  #header {
+    color: rgb(42, 20, 243);
       position: absolute;
       left: 50%;
       top: 50%;
@@ -52,32 +50,26 @@ button:focus {
       margin: 0;
       padding: 0 20px;
       font-family: 'Quicksand', sans-serif;
-      text-shadow: 0 0 20px #ff005b;
   }
   
-  #neon:after {
-      content: '[ WEB-SCRAPER ]';
-      color: #ff005b;
+  #header:after {
+      content: '';
+      color: #2600ff;
       position: absolute;
       padding: 0 20px;
       top: 0;
       left: 0;
       z-index: -1;
-      -webkit-filter: blur(15px);
-              filter: blur(15px);
   }
   
-  #neon:before {
+  #header:before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
-      background: #fe3a80;
       z-index: -2;
-      -webkit-filter: blur(40px);
-              filter: blur(40px);
       opacity: 0.5;
   }
   
@@ -191,10 +183,8 @@ button:focus {
   /*****Modal************************************************************************************/
 
   .modal-content {
-    background-image: url('../../img/notepad-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     background-position: center 12%;
     border-radius: 0;
     font-family: 'Rock Salt', cursive;
@@ -250,7 +240,7 @@ button:focus {
 
   /******Neon*******************************************************************************/
 
-  #neon:before {
+  #header:before {
     -webkit-animation-name: pulse;
             animation-name: pulse;
     -webkit-animation-iteration-count: infinite;
@@ -290,11 +280,11 @@ button:focus {
   
   }
   }
+  
 
   /*************************************************************************/
 
   .storyPanel {
-	background-image: url('../../img/panel-background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #ddd;
